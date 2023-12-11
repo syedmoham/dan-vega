@@ -1,0 +1,14 @@
+package com.syedm.hellosecurity.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController("/api/posts")
+public class PostController {
+
+    @GetMapping("/all")
+    String findAll()   {
+        return "All posts";
+    }
+}
